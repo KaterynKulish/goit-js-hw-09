@@ -1,7 +1,3 @@
-import Simplelightbox from 'simplelightbox';
-import 'simplelightbox/dist/simple-lightbox.min.css'; //додатковий імпорт стилів із ДЗ
-// let gallery = new SimpleLightbox('.gallery');
-
 const images = [
   {
     preview:
@@ -68,6 +64,9 @@ const images = [
   },
 ];
 
+import SimpleLightbox from 'simpleLightbox';
+import 'simpleLightbox/dist/simple-lightbox.min.css'; //додатковий імпорт стилів із ДЗ
+
 const gallery = document.querySelector('.gallery');
 
 const galleryCard = images
@@ -88,3 +87,11 @@ const galleryCard = images
   .join('');
 
 gallery.insertAdjacentHTML('beforeend', galleryCard);
+
+new SimpleLightbox('.gallery a', {
+  overlayOpacity: 0.7,
+  captionsData: 'alt',
+  captionDelay: 250,
+  captionPosition: 'bottom',
+  captionType: 'attr',
+});
