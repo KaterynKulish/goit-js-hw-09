@@ -1,5 +1,5 @@
 import SimpleLightbox from 'simplelightbox';
-import 'simpleLightbox/dist/simple-lightbox.min.css'; //додатковий імпорт стилів із ДЗ
+import 'simplelightbox/dist/simple-lightbox.min.css'; //додатковий імпорт стилів із ДЗ
 
 const images = [
   {
