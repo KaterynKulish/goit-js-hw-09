@@ -36,5 +36,6 @@ function handleSabmit(event) {
   } else {
     form.reset();
     localStorage.removeItem(LocSt_key);
+    console.log(formData);
   }
 }
